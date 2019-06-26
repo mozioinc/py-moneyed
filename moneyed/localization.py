@@ -160,7 +160,7 @@ _format("fr_FR", group_size=3, group_separator=" ", decimal_point=",",
         negative_sign="-", trailing_negative_sign="",
         rounding_method=ROUND_HALF_EVEN)
 
-_format("fr_CA", group_size=3, group_separator=" ", decimal_point=",",
+_format("fr_CA", group_size=3, group_separator=",", decimal_point=".",
         positive_sign="", trailing_positive_sign="",
         negative_sign="-", trailing_negative_sign="",
         rounding_method=ROUND_HALF_EVEN)
@@ -388,7 +388,7 @@ _sign('fr_FR', moneyed.EUR, suffix=' €')
 _sign('fr_FR', moneyed.USD, suffix=' $ US')
 _sign('fr_CA', moneyed.USD, suffix=' $ US')
 _sign('fr_FR', moneyed.CAD, suffix=' $ CA')
-_sign('fr_CA', moneyed.CAD, suffix=' $')
+_sign('fr_CA', moneyed.CAD, prefix='$')
 _sign('fr_CA', moneyed.EUR, suffix=' €')
 _sign('nl_NL', moneyed.EUR, prefix='€ ')
 _sign('nb_NO', moneyed.NOK, prefix='kr ')
